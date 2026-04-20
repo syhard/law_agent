@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>法律对话助手</title>
+    <link rel="stylesheet" href="./analyze.css" />
+  </head>
+  <body>
+    <main class="chat-app">
+      <header class="chat-header">
+        <div>
+          <p class="eyebrow">Legal Chat</p>
+          <h1>法律对话助手</h1>
+          <p class="subtitle">先正常对话，需要时自动进入案件研判，结束后继续聊天。</p>
+        </div>
+      </header>
+
+      <section id="chatTimeline" class="chat-timeline"></section>
+
+      <section class="composer">
+        <textarea
+          id="caseText"
+          placeholder="输入你的问题或案情，例如：对方借了我五万元一直不还，我想知道能不能起诉。"
+        ></textarea>
+        <div class="composer-actions">
+          <span class="hint">支持 Ctrl + Enter 发送</span>
+          <div class="action-buttons">
+            <button id="resetBtn" class="ghost">清空对话</button>
+            <button id="submitBtn">发送</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./analyze.js"></script>
+  </body>
+</html>
